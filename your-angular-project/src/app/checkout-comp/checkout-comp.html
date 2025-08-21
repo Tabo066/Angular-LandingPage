@@ -1,0 +1,196 @@
+
+   <div class="container my-5" id="checkout-box">
+
+      <div class="row" id="p1" style="display: flex; justify-content: center; width: 400px;">
+      <section class="container-direccion">
+        <h4 style="text-align: center;">FORMULARIO DE ENVIO</h4>
+        <form class="form-direccion" action="#">
+            <div class="input-box">
+                <label>Nombre Completo</label>
+                <input required="" style="background-color: #1c1c1c;" placeholder="Nombre y Apellido" type="text">
+            </div>
+            <div class="column">
+                <div class="input-box">
+                  <label>Numero de Telefono</label>
+                  <input style="background-color: #1c1c1c;" required="" placeholder="Ej. 11 23456789" type="telephone">
+                </div>
+                <div class="input-box">
+                  <label>Codigo Postal</label>
+                  <input style="background-color: #1c1c1c;" required="" placeholder="Ej. 1234" type="telephone">
+                </div>
+            </div>
+            <div class="gender-box">
+              <label>El lugar es:</label>
+              <div class="gender-option">
+                <div class="gender">
+                  <input checked="" name="gender" id="check-male" type="radio">
+                  <label style="color: #fff" for="check-male">Casa</label>
+                </div>
+                <div class="gender">
+                  <input name="gender" id="check-female" type="radio">
+                  <label style="color: #fff;" for="check-female">Trabajo</label>
+                </div>
+                <div class="gender">
+                  <input name="gender" id="check-other" type="radio">
+                  <label style="color: #fff" for="check-other">Otro</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-box address">
+              <label>DIRECCION</label>
+              <input style="background-color: #1c1c1c;" required="" placeholder="Ingresa tu direccion" type="text">
+              <div  class="column">
+                <div style="background-color: #1c1c1c;;" class="select-box">
+                  <select style="background-color: #1c1c1c;;">
+                    <option hidden="">Pais</option>
+                    <option>Argentina</option>
+                    <option>Uruguay</option>
+                    <option>Paraguay</option>
+                    <option>Chile</option>
+                    <option>Brasil</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              <input required="" style="background-color: #1c1c1c;;" placeholder="Nombre de tu ciudad" type="text">
+              </div>
+            </div>
+            <div class="input-box">
+            <label>Aclaracion</label>
+            <textarea style="background-color: #1c1c1c;; color: #000;" id="fixing-details" name="fixing_details" placeholder="Agregar informacion extra para facilitar tu envio"></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="row" id="p2" style="display: flex; justify-content: center; width: 400px;">
+
+      <section class="add-card page" style="width: 400px; padding: 0;">
+        <form class="form2" style="width: 100%; height: 100%; padding: 10; margin: 0;">
+          <h4 style="color: #fff; text-align: center;">METODO DE PAGO</h4>
+          <div class="payment--options" style="padding: 20px;">
+            <button type="button" name="paypal">
+          <img src="https://logowik.com/content/uploads/images/mercado-pago3162.logowik.com.webp" alt="" style=" background-size: cover; height: 100%; width: 100%; border-radius: 9px;">
+            </button> 
+            <button type="button" name="apple-pay">
+              <img src="https://play-lh.googleusercontent.com/LZul6S22CgABMznPRNY_OhCLZPqf913Bm5mnpBWIiTEVwgqWaNBVtiqXNlnr8o4JSsk" alt="" style=" background-size: cover; height: 100%; width: 100%; border-radius: 9px;">
+            </button> 
+            <button type="button" name="google-pay">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="" style=" background-size: cover; height: 100%; width: 100%; border-radius: 9px;">
+            </button>
+            <button type="button" name="google-pay">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Uala.png" alt="" style=" background-size: cover; height: 100%; width: 100%; border-radius: 9px;">
+            </button>
+            <button type="button" name="google-pay">
+              <img src="https://logowik.com/content/uploads/images/857_visa.jpg" alt="" style=" background-size: cover; height: 100%; width: 100%; border-radius: 9px;">
+            </button>
+            <button type="button" name="google-pay">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="" style=" background-size: cover; height: 100%; width: 100%; border-radius: 9px;">
+            </button>
+          </div>
+          
+          <label for="name" class="label">
+            <span class="title">Nombre completo del titular</span>
+            <input
+              class="input-field"
+              type="text"
+              name="input-name"
+              title="Input title"
+              placeholder="Nombre completo"
+            />
+          </label>
+          <label for="serialCardNumber" class="label">
+            <span class="title">Numero de Tarjeta</span>
+            <input
+              id="serialCardNumber"
+              class="input-field"
+              type="number"
+              name="input-name"
+              title="Input title"
+              placeholder="0000 0000 0000 0000"
+            />
+          </label>
+          <div class="split">
+            <label for="ExDate" class="label">
+              <span class="title">Vencimiento</span>
+              <input
+                id="ExDate"
+                class="input-field"
+                type="text"
+                name="input-name"
+                title="Expiry Date"
+                placeholder="01/23"
+              />
+            </label>
+            <label for="cvv" class="label">
+              <span class="title"> CVV</span>
+              <input
+                id="cvv"
+                class="input-field"
+                type="number"
+                name="cvv"
+                title="CVV"
+                placeholder="CVV"
+              />
+            </label>
+          </div>
+          <input class="checkout-btn" type="button" value="Comprobar" />
+        </form>
+      </section>
+    </div>
+
+    <div class="row" id="p3" style="display: flex; justify-content: center; width: 400px;">
+      <div class="container" style="width: 500px; padding: 0;">
+        <div class="card-c cart">
+          <label class="title1" id="etiqueta">CHECKOUT</label>
+          <div class="steps">
+            <div class="step">
+              <div>
+                <span>ENVIO</span>
+                <p>221B Baker Street, W1U 8ED</p>
+                <p>London, United Kingdom</p>
+              </div>
+              <hr />
+              <div>
+                <span>METODO DE PAGO</span>
+                <p>Visa</p>
+                <p>**** **** **** 4243</p>
+              </div>
+              <hr />
+              <div class="promo">
+                <span>CODIGO PROMOCIONAL</span>
+                <form class="form">
+                  <input
+                    class="input_field"
+                    placeholder="Ingresa tu codigo promocional"
+                    type="text"
+                  />
+                  <button>Aplicar</button>
+                </form>
+              </div>
+              <hr />
+              <div class="payments">
+                <span>PAGO</span>
+                <div class="details">
+                  <span>Subtotal:</span>
+                  <span>$240.00</span>
+                  <span>Envio:</span>
+                  <span>$10.00</span>
+                  <span>Iva:</span>
+                  <span>$30.40</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-c checkout">
+          <div class="footer">
+            <label class="price">$280.40</label>
+            <button class="checkout-btn">Realizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>

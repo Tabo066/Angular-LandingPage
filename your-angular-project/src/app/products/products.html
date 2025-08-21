@@ -1,0 +1,226 @@
+  <div class="placa-container" id="placa">
+    <div style="display: flex; width: 800px; height: 800px; justify-content: flex-end; align-items: center; flex-direction: column;">
+    <div class="cerrar-container" style="margin-right: 50px;">
+      <a class="cerrar" id="toggleCerrar" style="text-decoration: none;" onclick={Cerrar()}>❌</a>
+    </div>
+
+    
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.blogs.es/0c11c8/radeon6700ap/1366_2000.jpeg" class="d-block w-100" alt="RX 6600XT" style="width: auto; height: 70%;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22772007/twarren_210809_4700_0001.jpg?quality=90&strip=all&crop=0.33088235294117,0,99.338235294118,100" class="d-block w-100" alt="RX 6600XT" style="width: auto; height: 70%;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://reviewed-com-res.cloudinary.com/image/fetch/s--5u0RPfEZ--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,h_668,q_auto,w_1187/https://reviewed-production.s3.amazonaws.com/1629128288591/othermain2.jpg" class="d-block w-100" alt="RX 6600XT" style="width: auto; height: 70%;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+      <div class="card descripcion mt-2" >
+        <div class="card-body">
+          <h5 class="card-title">👁️‍🗨️MODELO: RX6600XT</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"> 💲PRECIO: $300.000 </h6>
+          <p class="card-text">  🗂️STOCK: 3 <br> ☑️CONDICION: Nueva <br> ⏱️AÑO DE SALIDA: 2020 <br> 📼MEMORIA VRAM: 6GB <br> ⚡VELOCIDAD DE GPU: 1800GHZ <br> ℹ️AMD FSR: Si <br> 🔋CONSUMO APROXIMADO: 200W
+             </p>
+          <a href="#" class="card-link">Detalles del Fabricante</a>
+          
+        </div>
+      </div>
+            <p class="d-inline-flex gap-1 mt-2">
+        <a class="btn btn-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">🛒Sumar al carrito</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">❔Preguntar sobre el producto</button>
+      </p>
+    </div>
+    </div>
+
+
+
+<!-- Sidebar Toggle Button -->
+<nav class="navbar px-3">
+  <button class="btn btn-outline-dark" (click)="colapso()" id="toggleSidebar">☰ Filtros</button>
+</nav>
+
+<!-- Sidebar Content -->
+<div class="sidebar collapse" id="sidebarMenu">
+  <h2>Filtros</h2>
+  <div class="filter-group">
+    <strong>Categoria</strong>
+    <label><input type="checkbox" /> Nueva</label>
+    <label><input type="checkbox" /> Reacondicionada</label>
+    <label><input type="checkbox" /> Todas</label>
+  </div>
+  <div class="filter-group">
+    <strong>Precio</strong>
+    <label><input type="radio" name="price" /> menos de $150.000</label>
+    <label><input type="radio" name="price" /> $150.000 - $300.000</label>
+    <label><input type="radio" name="price" /> $300.000 - $500.000</label>
+    <label><input type="radio" name="price" /> Mas de $500.000</label>
+  </div>
+  <div class="filter-group">
+    <strong>Marca</strong>
+    <label><input type="checkbox" /> Nvidia</label>
+    <label><input type="checkbox" /> AMD</label>
+    <label><input type="checkbox" /> Intel</label>
+  </div>
+</div>
+
+  
+
+
+  <div class="container main-content">
+    <div class="row justify-content-center product-grid">
+      <!-- Product Card -->
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff" >Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff" >Ver producto</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff" >Ver producto</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff" >Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-content">
+    <div class="row justify-content-center product-grid">
+
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-content">
+    <div class="row justify-content-center product-grid">
+
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4" style="width: 250px; height: 300px;">
+        <div class="card text-center h-100" style="background-color: #333;">
+          <img src="https://www.invidcomputers.com/images/000000000041380903223product-1627614535a92069d43bae9ee0db8eada2acefbe33.png" class="card-img-top" alt="RX 6600XT" style="height: auto; width: 200px; max-width: 80vw; object-fit: cover; padding: 10px;">
+          <div class="card-body" style="padding: 5px;">
+            <h5 class="card-title text-white" style="font-size: 1rem;">RX 6600XT</h5>
+            <p class="card-text text-white" style="font-size: 0.7rem;">Some quick example text to build on the card title.</p>
+            <a href="#" class="btn btn-custom" id="toggleVer" onclick={Ver()} style="font-size: 0.8rem; color: #fff">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

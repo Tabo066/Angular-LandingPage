@@ -1,0 +1,38 @@
+
+    <div class="my-4" style="text-align: center;">
+    <h1><a style="color: #000; text-decoration: none;" routerLink="" [ngClass]="{active: menuOption == 'home'}" (click)="onOption('home')">🌌Placas de Video</a></h1>
+   <div class="modo-noche">
+    <button id="toggle-btn">🌙</button>
+   </div>
+   </div>
+
+   <div class="my-4 contenedor-menu" style="height: 50px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 3px solid #000; border-radius: 5px;">
+   <div class="dropdown mx-2">
+  <button class="btn dropdown-toggle" style="font-weight: bold;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Productos
+  </button>
+  <ul class="dropdown-menu " >
+    <li><a class="dropdown-item" style="font-weight: bold; background-color: #fff; color: #000;"  routerLink="/products" [ngClass]="{active: menuOption == 'products'}" (click)="onOption('products')">Nvidia</a></li>
+    <li><a class="dropdown-item" style="font-weight: bold; background-color: #fff; color: #000;"  routerLink="/products" [ngClass]="{active: menuOption == 'products'}" (click)="onOption('products')">AMD</a></li>
+    <li><a class="dropdown-item" style="font-weight: bold; background-color: #fff; color: #000;" routerLink="/products" [ngClass]="{active: menuOption == 'products'}" (click)="onOption('products')">Rebajas</a></li>
+  </ul>
+</div>
+    <button type="button" class="btn mx-2" style="font-weight: bold;">
+  <a style="color: #000; text-decoration: none;" routerLink="/checkout" [ngClass]="{active: menuOption == 'checkout'}" (click)="onOption('checkout')">Carrito</a>
+</button>
+    <button type="button" class="btn mx-2" style="font-weight: bold; line-height: 0.9;"><a style="color: #000; text-decoration: none;" >Vende tu placa</a></button>
+    <div class="dropdown mx-2">
+  <button class="btn dropdown-toggle" style="font-weight: bold;" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Ayuda </button>
+  <ul class="dropdown-menu ">
+    <li><a class="dropdown-item" style="font-weight: bold;" href="#">Seguir tu envio</a></li>
+    <li><a class="dropdown-item" style="font-weight: bold;" href="#">Atencion al cliente</a></li>
+    <li><a class="dropdown-item" style="font-weight: bold;" href="#ubi">Donde encontrarnos</a></li>
+  </ul>
+</div>
+   </div>
+
+<router-outlet>
+
+</router-outlet>
+
+
